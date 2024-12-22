@@ -132,17 +132,6 @@
             >;
         };
 
-        window_home_row_layer {
-            bindings = <
-&kp F1                          &kp F2                        &kp F3                    &kp F4                      &kp F5                                                                                                                                       &kp F6                     &kp F7                       &kp F8                     &kp F9                                 &kp F10
-&kp GRAVE                       &kp N1                        &kp N2                    &kp N3                      &kp N4                     &kp N5                                                                                                    &kp N6  &kp N7                     &kp N8                       &kp N9                     &kp N0                                 &kp MINUS
-&kp TAB                         &kp Q                         &kp W                     &kp E                       &kp R                      &kp T                                                                                                     &kp Y   &kp U                      &kp I                        &kp O                      &kp P                                  &kp BSLH
-&kp BACKSPACE                   &home_row_mod LEFT_CONTROL A  &home_row_mod LEFT_ALT S  &home_row_mod LEFT_SHIFT D  &home_row_mod LEFT_META F  &kp G                                                                                                     &kp H   &home_row_mod RIGHT_WIN J  &home_row_mod RIGHT_SHIFT K  &home_row_mod RIGHT_ALT L  &home_row_mod RIGHT_CONTROL SEMICOLON  &kp SQT
-&hold_tap_kp LEFT_SHIFT ESCAPE  &kp Z                         &kp X                     &kp C                       &kp V                      &kp B   &kp LSHFT  &kp LEFT_META     &layer_td  &kp DEL    &kp RIGHT_ALT  &kp RIGHT_CONTROL               &kp N   &kp M                      &kp COMMA                    &kp DOT                    &kp FSLH                               &kp PG_UP
-&magic 5 0                      &kp HOME                      &kp END                   &kp LEFT                    &kp RIGHT                          &kp SPACE  &kp LEFT_CONTROL  &kp LALT   &kp EQUAL  &kp ENTER      &hold_tap_kp RIGHT_SHIFT SPACE          &kp UP                     &kp DOWN                     &kp LBKT                   &kp RBKT                               &kp PG_DN
-            >;
-        };
-
         mac_home_row_layer {
             bindings = <
 &kp F1                          &kp F2                        &kp F3                    &kp F4                      &kp F5                                                                                                                                                              &kp F6                         &kp F7                       &kp F8                     &kp F9                             &kp F10
@@ -151,6 +140,17 @@
 &kp BACKSPACE                   &home_row_mod LEFT_COMMAND A  &home_row_mod LEFT_ALT S  &home_row_mod LEFT_SHIFT D  &home_row_mod LEFT_CONTROL F  &kp G                                                                                                                         &kp H   &home_row_mod RIGHT_CONTROL J  &home_row_mod RIGHT_SHIFT K  &home_row_mod RIGHT_ALT L  &home_row_mod RIGHT_GUI SEMICOLON  &kp SQT
 &hold_tap_kp LEFT_SHIFT ESCAPE  &kp Z                         &kp X                     &kp C                       &kp V                         &kp B   &kp LSHFT  &kp LEFT_ALT   &layer_td         &kp BACKSPACE                  &kp RCTRL  &kp RIGHT_ALT                   &kp N   &kp M                          &kp COMMA                    &kp DOT                    &kp FSLH                           &kp PG_UP
 &magic 5 0                      &kp HOME                      &kp END                   &kp LEFT                    &kp RIGHT                             &kp SPACE  &kp LEFT_META  &kp LEFT_CONTROL  &hold_tap_kp RIGHT_META EQUAL  &kp ENTER  &hold_tap_kp RIGHT_SHIFT SPACE          &kp UP                         &kp DOWN                     &kp LBKT                   &kp RBKT                           &kp PG_DN
+            >;
+        };
+
+        window_home_row_layer {
+            bindings = <
+&kp F1                          &kp F2                        &kp F3                    &kp F4                      &kp F5                                                                                                                                       &kp F6                     &kp F7                       &kp F8                     &kp F9                                 &kp F10
+&kp GRAVE                       &kp N1                        &kp N2                    &kp N3                      &kp N4                     &kp N5                                                                                                    &kp N6  &kp N7                     &kp N8                       &kp N9                     &kp N0                                 &kp MINUS
+&kp TAB                         &kp Q                         &kp W                     &kp E                       &kp R                      &kp T                                                                                                     &kp Y   &kp U                      &kp I                        &kp O                      &kp P                                  &kp BSLH
+&kp BACKSPACE                   &home_row_mod LEFT_CONTROL A  &home_row_mod LEFT_ALT S  &home_row_mod LEFT_SHIFT D  &home_row_mod LEFT_META F  &kp G                                                                                                     &kp H   &home_row_mod RIGHT_WIN J  &home_row_mod RIGHT_SHIFT K  &home_row_mod RIGHT_ALT L  &home_row_mod RIGHT_CONTROL SEMICOLON  &kp SQT
+&hold_tap_kp LEFT_SHIFT ESCAPE  &kp Z                         &kp X                     &kp C                       &kp V                      &kp B   &kp LSHFT  &kp LEFT_META     &layer_td  &kp DEL    &kp RIGHT_ALT  &kp RIGHT_CONTROL               &kp N   &kp M                      &kp COMMA                    &kp DOT                    &kp FSLH                               &kp PG_UP
+&magic 5 0                      &kp HOME                      &kp END                   &kp LEFT                    &kp RIGHT                          &kp SPACE  &kp LEFT_CONTROL  &kp LALT   &kp EQUAL  &kp ENTER      &hold_tap_kp RIGHT_SHIFT SPACE          &kp UP                     &kp DOWN                     &kp LBKT                   &kp RBKT                               &kp PG_DN
             >;
         };
 
@@ -170,8 +170,8 @@
 &bt BT_CLR   &none            &none            &none            &none                                                                                     &none   &none  &none  &none  &bt BT_CLR_ALL
 &none        &none            &none            &none            &none            &none                                                             &none  &trans  &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none   &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &to 4   &to 5  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &to 0   &to 1  &to 3  &none  &sys_reset
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &to 3   &to 4  &to 5  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &to 0   &to 1  &to 2  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none   &none  &none  &none  &none
             >;
         };
